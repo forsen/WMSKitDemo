@@ -1,0 +1,22 @@
+PODS:
+  - WMSKit (0.0.3)
+
+DEPENDENCIES:
+  - WMSKit (from `https://github.com/forsen/WMSKit.git`, tag `0.0.3`)
+
+EXTERNAL SOURCES:
+  WMSKit:
+    :git: https://github.com/forsen/WMSKit.git
+    :tag: 0.0.3
+
+CHECKOUT OPTIONS:
+  WMSKit:
+    :git: https://github.com/forsen/WMSKit.git
+    :tag: 0.0.3
+
+SPEC CHECKSUMS:
+  WMSKit: 564bfa7eb6f5829da20296e09eef3fa5d88fbe7f
+
+PODFILE CHECKSUM: f09f4a9274348595bd290cad9ba9a0ea776f8a0c
+
+COCOAPODS: 1.1.1

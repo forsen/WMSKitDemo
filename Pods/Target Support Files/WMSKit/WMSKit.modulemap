@@ -1,0 +1,6 @@
+framework module WMSKit {
+  umbrella header "WMSKit-umbrella.h"
+
+  export *
+  module * { export * }
+}

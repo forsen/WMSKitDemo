@@ -12,9 +12,12 @@
 		D305A8461E341A6B00262032 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D305A8441E341A6B00262032 /* Main.storyboard */; };
 		D305A8481E341A6B00262032 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D305A8471E341A6B00262032 /* Assets.xcassets */; };
 		D305A84B1E341A6B00262032 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D305A8491E341A6B00262032 /* LaunchScreen.storyboard */; };
+		F56170EF26475E3D49E4318A /* Pods_WMSKitDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A4B9E8D4235A840237B9E28 /* Pods_WMSKitDemo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2A4B9E8D4235A840237B9E28 /* Pods_WMSKitDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WMSKitDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D28A360178FC671686956EE /* Pods-WMSKitDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WMSKitDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WMSKitDemo/Pods-WMSKitDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		D305A83D1E341A6B00262032 /* WMSKitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WMSKitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D305A8401E341A6B00262032 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D305A8421E341A6B00262032 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,7 @@
 		D305A8471E341A6B00262032 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D305A84A1E341A6B00262032 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D305A84C1E341A6B00262032 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E566A1190082EF876F982DC3 /* Pods-WMSKitDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WMSKitDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-WMSKitDemo/Pods-WMSKitDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F56170EF26475E3D49E4318A /* Pods_WMSKitDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0A0854B6997F55735D45FB22 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2A4B9E8D4235A840237B9E28 /* Pods_WMSKitDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		582BF1BE2197592B812E871A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5D28A360178FC671686956EE /* Pods-WMSKitDemo.debug.xcconfig */,
+				E566A1190082EF876F982DC3 /* Pods-WMSKitDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		D305A8341E341A6B00262032 = {
 			isa = PBXGroup;
 			children = (
 				D305A83F1E341A6B00262032 /* WMSKitDemo */,
 				D305A83E1E341A6B00262032 /* Products */,
+				582BF1BE2197592B812E871A /* Pods */,
+				0A0854B6997F55735D45FB22 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D305A84F1E341A6B00262032 /* Build configuration list for PBXNativeTarget "WMSKitDemo" */;
 			buildPhases = (
+				C91F251B26A85E0F0DA570DE /* [CP] Check Pods Manifest.lock */,
 				D305A8391E341A6B00262032 /* Sources */,
 				D305A83A1E341A6B00262032 /* Frameworks */,
 				D305A83B1E341A6B00262032 /* Resources */,
+				EFCFF4A7802B2CECBC9F7FEB /* [CP] Embed Pods Frameworks */,
+				2C485CCE2DB3299C4AFD9C8C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,6 +158,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2C485CCE2DB3299C4AFD9C8C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WMSKitDemo/Pods-WMSKitDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C91F251B26A85E0F0DA570DE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		EFCFF4A7802B2CECBC9F7FEB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WMSKitDemo/Pods-WMSKitDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D305A8391E341A6B00262032 /* Sources */ = {
@@ -257,6 +332,7 @@
 		};
 		D305A8501E341A6B00262032 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5D28A360178FC671686956EE /* Pods-WMSKitDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 7EW74P6JJK;
@@ -270,6 +346,7 @@
 		};
 		D305A8511E341A6B00262032 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E566A1190082EF876F982DC3 /* Pods-WMSKitDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 7EW74P6JJK;
