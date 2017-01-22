@@ -6,5 +6,5 @@ target 'WMSKitDemo' do
   use_frameworks!
 
   # Pods for WMSKitDemo
-	pod 'WMSKit', :git => 'https://github.com/forsen/WMSKit.git', :tag => '0.0.3'
+	pod 'WMSKit'
 end

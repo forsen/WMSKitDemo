@@ -1,6 +1,6 @@
 {
   "name": "WMSKit",
-  "version": "0.0.3",
+  "version": "1.0.1",
   "summary": "A kit to consume WMS services",
   "description": "This kit provide a class that will take a WMS Service URI and return an overlay to be used\nwith MapKit",
   "homepage": "https://github.com/forsen/WMSKit",
@@ -16,7 +16,7 @@
   },
   "source": {
     "git": "https://github.com/forsen/WMSKit.git",
-    "tag": "0.0.3"
+    "tag": "1.0.1"
   },
   "source_files": [
     "WMSKit",
